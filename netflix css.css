@@ -1,0 +1,201 @@
+body{ 
+   background-color:black;
+   margin:0px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.tela_principal{
+   background-repeat: no-repeat;
+   background-position: center ;
+   background-size:cover;
+   width:100%;
+   height:745px;
+   background-image:linear-gradient(to bottom,black,transparent,black),url("background.jpg");
+   margin:0px;
+   border-bottom:6px;
+   border-left:0px;
+   border-right:0px;
+   border-top:0px;
+   border-style: solid;
+   border-color: #808080;
+}
+
+header{
+   width: 100%;
+   height:100px;
+}
+
+.icone{
+   width: 25%;
+   height:100px;
+   background-image:url("netflix_logo.png");
+   background-repeat: no-repeat;
+   background-position: bottom 25px right 230px;
+}
+
+.botao_entrar{
+   position: absolute;
+   right:20px;
+   top: 20px;
+   height: 40px;
+   width: 80px;
+   margin: 5px 25px 0px 30px;
+   border: 1px solid red;
+   border-radius: 2px;
+   background-color: red;
+}
+
+.entrar{
+   height: 40px;
+   width: 80px;
+   text-align: center;
+   margin: 10px 0px 0px 0px;
+   color: white;
+}
+
+.botao_idioma{
+   position: absolute;
+   right:170px;
+   top: 25px;
+   height: 40px;
+   width: 100px;
+   border: 1px solid white;
+   border-radius:2px;
+   background-color: black;
+}
+
+.idioma{
+   text-align: center;
+   margin: 7px 0px 0px 0px;
+   color: white;
+}
+
+main{
+   padding: 100px 0px 0px 0px;
+   width: 100%;
+   height:500px;
+}
+.espaco_email{
+   position: absolute;
+   margin: 0% auto;
+   height:60px;
+   right:800px;
+   width:550px;
+   background-color:white;
+   color:grey;
+   border:1px;
+   border-style: solid;
+   border-color: black;
+}
+
+.espaco_email_vermelho{
+   position: absolute;
+   height:60px;
+   right:615px;
+   width:185px;
+   background-color:red;
+   color:white; 
+   border:1px;
+   border-style: solid;
+   border-color: black;
+     
+}
+
+.email{
+   margin: 20px 0px 0px 5px;
+}
+
+.vamos_la{
+   margin:15px 1px 5px 30px;
+   font-size: 25px;
+}
+
+
+h1{ font-size: 60px; text-align: center; color:white ; line-height: 65%}
+h2{ font-size: 25px; text-align: center; color:white }
+h3{ font-size: 20px; text-align: center; color:white }
+
+@media only screen and (max-width:600px){
+ 
+   h1{ font-size: 28px; text-align: center; color:white}
+   h2{ font-size: 20px; text-align: center; color:white}
+   h3{ font-size: 20px; text-align: center; color:white}
+   
+   .espaco_email{
+       position: static;
+       height:40px;
+       right:545px;
+       width:350px;
+       background-color:white;
+       color:grey;
+       border:1px;
+       border-style: solid;
+       border-color: black;
+       margin: 1px 3px 1px 25px;
+    
+   }
+   
+   .espaco_email_vermelho{
+      position: absolute;
+      height:40px;
+      width:116px;
+      right:150px;
+      background-color:red;
+      color:white; 
+      border:1px;
+      border-style: solid;
+      border-color: red;
+      margin: 15px 3px 1px 110px;
+      border-radius:2px;
+     
+   }
+   
+   .vamos_la{
+      font-size:20px;
+      margin: 8px 8px 0px 8px;
+   }
+
+   .icone{
+      width: 5%;
+      height:80px;
+      width: 150px;
+      background-image:url("netflix_logo2.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+   }
+
+   .botao_entrar{
+     position: absolute;
+     right:20px;
+     top: 20px;
+     height: 30px;
+     width: 80px;
+     margin: 5px 10px 0px 30px;
+     border: 1px solid red;
+     border-radius: 5px;
+     background-color: red;
+   }
+
+   .entrar{
+     height: 40px;
+     width: 80px;
+     font-weight: bold;
+     margin: 6px 0px 0px 0px;
+   }
+
+   .botao_idioma{
+     right:125px;
+     height: 30px;
+     font-weight: bold;
+     border-radius: 2px;
+   }
+
+   .idioma{
+     margin: 3px 0px 0px 0px;
+     font-weight: bold;
+   }
+  
+   .email{
+     margin: 10px 0px 0px 5px;
+   }
+}
