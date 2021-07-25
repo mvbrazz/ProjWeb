@@ -18,6 +18,7 @@ body{
    border-top:0px;
    border-style: solid;
    border-color: #808080;
+
 }
 
 header{
@@ -26,8 +27,8 @@ header{
 }
 
 .icone{
-   width: 25%;
-   height:100px;
+   width: 32%;
+   height:110px;
    background-image:url("netflix_logo.png");
    background-repeat: no-repeat;
    background-position: bottom 25px right 230px;
@@ -43,14 +44,9 @@ header{
    border: 1px solid red;
    border-radius: 2px;
    background-color: red;
-}
-
-.entrar{
-   height: 40px;
-   width: 80px;
-   text-align: center;
-   margin: 10px 0px 0px 0px;
-   color: white;
+   color:white;
+   font-weight: bold;
+   font-size: 15px;
 }
 
 .botao_idioma{
@@ -72,25 +68,99 @@ header{
 }
 
 main{
-   padding: 100px 0px 0px 0px;
    width: 100%;
    height:500px;
 }
-.espaco_email{
-   position: absolute;
+
+.menu{
+   margin-top:110px;
+}
+
+.menu2{
+   display: none;
    margin: 0% auto;
+   height:470px;
+   width:450px;
+   background-color:black;
+   color:grey;
+   border-radius:2px;
+   opacity:0.95;
+   padding-top:5px;
+}
+
+.erro_login{
+   display: none;
+   font-style: normal;
+   text-align: center;
+   color: red;
+}
+
+.menu3{
+   display: none;
+   font-size: 15px;
+   background-color:white;
+   height:600px;
+   width: 100%;
+   border-color: indigo;
+   border-style: solid; 
+}
+
+.busca{
+   position: absolute;
+   right:170px;
+   top: 25px;
+   height: 100px;
+   width: 120px;
+   border: 1px solid red;
+   border-radius:2px;
+   background-color: black;
+
+}
+
+.pesquisa_personagem{
+
+   height: 100px;
+   width: 80px;
+   border: 1px solid red;
+   border-radius: 2px;
+   background-color: red;
+   color:white;
+   font-weight: bold;
+   font-size: 15px;
+
+}
+
+.imagem_personagem{
+   display: none;
+   height:330px;
+   background-image:url("netflix_logo.png");
+   background-repeat: no-repeat;
+   margin-left: 5px; 
+}
+
+.conteudo_login{
+   display: block;
+   margin: 0% auto;
+   height: 75%;
+   width: 75%;
+   
+}
+
+.espaco_email{
+   float:left;
+   margin: 0px 0px 0px 26%;
    height:60px;
-   right:800px;
-   width:550px;
+   right:300px;
+   width:500px;
    background-color:white;
    color:grey;
    border:1px;
    border-style: solid;
-   border-color: black;
+   border-color: white;
 }
 
 .espaco_email_vermelho{
-   position: absolute;
+   float:left;
    height:60px;
    right:615px;
    width:185px;
@@ -98,7 +168,7 @@ main{
    color:white; 
    border:1px;
    border-style: solid;
-   border-color: black;
+   border-color: red;
      
 }
 
@@ -112,8 +182,100 @@ main{
 }
 
 
-h1{ font-size: 60px; text-align: center; color:white ; line-height: 65%}
-h2{ font-size: 25px; text-align: center; color:white }
+input[type="text"]{
+   background-color: #333;
+   cursor: default;
+   appearance: auto;
+   outline: none;
+   box-sizing: border-box;
+   margin: 10px 3px 3px 5px;
+   border: initial;
+   color:white;
+   font-weight: bold;
+}
+
+input[type="password"]{
+   background-color:#333;
+   cursor: default;
+   appearance: auto;
+   outline: none;
+   box-sizing: border-box;
+   margin: 10px 3px 3px 5px;
+   border: initial;
+   color:#8c8c8c;
+   font-weight: bold;
+}
+
+.entrar{
+   font-size: 30px;
+   text-align: left;
+   color: white;
+   font-weight: bold;
+}
+
+.login{
+  height: 40px;
+  width: 100%;
+  background-color:#333;
+  border-radius:2px;
+  margin-bottom:15px;
+}
+
+.entrar_login{
+  margin-top:35px;
+  height: 40px;
+  width: 100%;
+  background-color:red;
+  border-radius:2px;
+  font-size:20px;
+  color:white;
+  border-radius:2px;
+  border-width: 0px;
+
+}  
+
+input[type="checkbox"]{
+   background-color: initial;
+   cursor: default;
+   appearance: auto;
+   box-sizing: border-box;
+   margin: 7px 3px 3px 0px;
+   padding: initial;
+   border: initial;
+   position: relative;
+   right:25px;
+   top: 1px;
+}
+
+.ajuda{
+ display:inline-block;
+ margin: 7px 0px 3px 30px;
+ font-size:15px;
+}
+
+.icone_facebook{
+  float:left;
+  width: 16px;
+  height:16px;
+  background-image:url("facebook.png");
+  background-repeat: no-repeat;
+  margin-top:50px;
+  padding: 0px 10px 0px 0px;
+}
+
+.facebook{
+
+ margin: 27px 0px 3px 0px;
+ font-size:15px;
+
+}
+.frase_menu{padding: 5px 0px 5px 0px;}
+.saiba_mais{font-size: 13px}
+span.branco{color:white;margin-left:2px}
+span.azul{color:blue;margin-left:2px}
+
+h1{ font-size: 30px; text-align: center; color:white ; letter-spacing: 2px;}
+h2{ font-size: 25px; text-align: center; color:white ; line-height: 115%}
 h3{ font-size: 20px; text-align: center; color:white }
 
 @media only screen and (max-width:600px){

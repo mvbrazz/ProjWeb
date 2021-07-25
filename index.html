@@ -1,28 +1,53 @@
-<DOCTYPE html>
-<html>
- <head>
- <script src="https://kit.fontawesome.com/98c55c6b14.js" crossorigin="anonymous"></script> 
- <link rel = "stylesheet" type="text/css" href="netflix css.css"/>
- <meta name="viewport" content="width=devicewidth,initial-scale=1"/>
- </head>
- <body>
-  <div class="tela_principal">
-   <header>
-    <div class="icone"></div>
-    <div class="botao_entrar"><div class="entrar">Entrar</div></div>
-    <div class="botao_idioma"><div class="idioma"><i class="fas fa-globe" style="color:white;"></i> Português <i class="fas fa-caret-down"></i></div></div>
-   </header>
-   <main>
-    <h1>Filmes, séries e muito</h1>
-    <h1>mais. Sem limites.</h1>
-    <h2>Assista onde quiser. Cancele quando quiser.</h2>
-    <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
-    <div class="espaco_email"><div class="email">Email</div></div>
-    <div class="espaco_email_vermelho"><div class="vamos_la">Vamos lá <i class="fas fa-chevron-right"></i></div></div>
-   </main>
-
-  
-  </div>
-  
- </body>
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel = "stylesheet" type="text/css" href="netflix css.css"/>
+    <script src="https://kit.fontawesome.com/98c55c6b14.js" crossorigin="anonymous"></script>
+    <script src="netflix javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Projeto Web - 2021</title>
+    
+</head>
+<body>
+    <div class="tela_principal">
+        <header>
+         <div class="icone"></div>
+         <button class="botao_entrar" type="button" onclick="entrar('menu','menu2','menu3')">Entrar</button>
+         <div class="botao_idioma"><div class="idioma"><i class="fas fa-globe" style="color:white;"></i> Português <i class="fas fa-caret-down"></i></div></div>
+        </header>
+        <main>
+            <div class="menu" id="menu">  
+                <h1><font size = 30>Filmes, séries e muito mais.<br /> Sem limites.</font></h1>
+                <h2>Assista onde quiser. Cancele quando quiser.</h2>
+                <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+                <div class="espaco_email"><div class="email">Email</div></div>
+                <div class="espaco_email_vermelho"><div class="vamos_la">Vamos lá <i class="fas fa-chevron-right"></i></div></div>
+            </div>           
+            <div class="menu2" id="menu2">
+                <div class="conteudo_login" id="conteudo_login">
+                    <div class="entrar"><p>Entrar</p></div>
+                    <div class="login"><input type="text" id="nome" name="login" size="40" minlength="3" placeholder="Email ou número de telefone" /></div>
+                    <div class="login"><input type="password" id="senha" name="senha" size="40" minlength="3" placeholder="Senha" /></div>
+                    <div class="erro_login" id="erro_login">E-mail ou senha incorreta</div>
+                    <button class="entrar_login" type="button" onclick="Login('conteudo_login','menu2','menu3','erro_login')">Entrar</button>
+                    <input type="checkbox" value="true">              
+                    <label for="campo_checkbox">Lembre-se de mim</label>
+                    <div class="ajuda">Precisa de ajuda?</div>
+                    <div class="icone_facebook"></div>
+                    <div class="facebook">Conectar com Facebook</div>
+                    <div class="frase_menu">Novo por aqui?<span class="branco"> Assine agora.</span></div>
+                    <div class="saiba_mais">Esta página é protegida pelo Google reCaptcha para garantir que você não é um robo.<span class="azul"> Saiba mais.</span></div>
+                </div>
+            </div> 
+            <div class="menu3" id="menu3">  
+                <input type="text"id="busca_personagem"name="busca_personagem"size="40"placeholder="ID do personagem"/>
+                <botton class="pesquisa_personagem" id="botaobusca" type="button" onclick="Pesquisa('menu3','imagem_personagem')">Pesquisar</botton>
+                <div class="imagem_personagem" id="imagem_personagem"></div>   
+            </div>                
+        </main>
+    </div>
+</body>
 </html>
