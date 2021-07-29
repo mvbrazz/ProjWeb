@@ -61,41 +61,46 @@ function personagemRetornado(nomeP){
 function Pesquisa(menu3,imagem_personagem) {
    //var id = document.querySelector("#busca_personagem");
    //var menuImagem = document.querySelector('#imagem_personagem');
-
+ 
    var nomePersonagem = document.querySelector("#busca_personagem");
    let menuImagem = document.querySelector('#imagem_personagem');
    var vetPersonagens;
    vetPersonagens = personagemRetornado(nomePersonagem);
 
    varVetImagem = [];
-  
-   while(menuImagem.firstChild){
-      menuImagem.removeChild(menuImagem.firstChild);
+   
+   if(nomePersonagem.value == ""){
+      alert("Você precisa digitar o login e a senha (4 letras). ");
    }
-
-   vetPersonagens.then(function(resposta){
-      //console.log(resposta.data.results.length);
-      var ajuda = [];
-        
-      for(i = 0;i<resposta.data.results.length;i++){
-         let imagemGeral = document.createElement('img');
-         varVetImagem[i] = imagemGeral;
-      }
+   else{
       
-      for(i = 0;i<resposta.data.results.length;i++){
+      while(menuImagem.firstChild){
+         menuImagem.removeChild(menuImagem.firstChild);
+      }
+
+      vetPersonagens.then(function(resposta){
+      //console.log(resposta.data.results.length);
+         var ajuda = [];
+        
+         for(i = 0;i<resposta.data.results.length;i++){
+            let imagemGeral = document.createElement('img');
+            varVetImagem[i] = imagemGeral;
+         }
+      
+         for(i = 0;i<resposta.data.results.length;i++){
          //document.getElementById(imagem_personagem).style.backgroundImage = `url("${resposta.data.image}")`;
          //console.log(resposta.data.results[i].image);
          
          
-         ajuda[i] = resposta.data.results[i].image;
-         console.log(ajuda[i]);
-    
-         varVetImagem[i].src = ajuda[i];
-         varVetImagem[i].style.width = "120px";
-         varVetImagem[i].style.height = "120px";
-         menuImagem.appendChild(varVetImagem[i]);
-      } 
+            ajuda[i] = resposta.data.results[i].image;
+            console.log(ajuda[i]);
+      
+            varVetImagem[i].src = ajuda[i];
+            varVetImagem[i].style.width = "120px";
+            varVetImagem[i].style.height = "120px";
+            menuImagem.appendChild(varVetImagem[i]);
+         } 
          
-   })
-
+      })
+   }
 }
