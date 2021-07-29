@@ -131,11 +131,12 @@ main{
 }
 
 .imagem_personagem{
-   display: none;
-   height:330px;
+   display: block;
+   /*display: none;
+   height:330px
    background-image:url("netflix_logo.png");
    background-repeat: no-repeat;
-   margin-left: 5px; 
+   margin-left: 5px; */
 }
 
 .conteudo_login{
