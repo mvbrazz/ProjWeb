@@ -70,7 +70,7 @@ function Pesquisa(menu3,imagem_personagem) {
    varVetImagem = [];
    
    if(nomePersonagem.value == ""){
-      alert("Você precisa digitar o login e a senha (4 letras). ");
+      alert("Você precisa digitar um nome!");
    }
    else{
       
